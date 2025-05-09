@@ -1,0 +1,130 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0056b3;
+  color: white;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+.navbar nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar nav ul li a:hover {
+  color: #ffdd00;
+}
+
+/* Dropdown Menu */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  color: #0056b3;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-menu li {
+  margin: 0.5rem 0;
+}
+
+.dropdown-menu li a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #ffdd00;
+}
+
+/* City Input */
+.city-input {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.city-input input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 1rem;
+  width: 60%;
+  max-width: 300px;
+}
+
+.city-input button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background: #0056b3;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.city-input button:hover {
+  background: #003f7f;
+}
+
+/* Map Styles */
+.map {
+  height: 400px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0056b3;
+  color: white;
+  font-size: 0.9rem;
+}

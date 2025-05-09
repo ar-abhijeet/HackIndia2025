@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">🌍 Disaster Management</div>
+        <nav>
+            <ul id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#weather-prediction">Weather Prediction</a></li>
+                <li><a href="#flood-prediction">Flood Prediction</a></li>
+                <li><a href="#earthquake-prediction">Earthquake Prediction</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main id="home">
+        <section class="hero">
+            <h1>Welcome to the Disaster Management System</h1>
+            <p>Track real-time data and AI-powered predictions to stay prepared.</p>
+            <div class="city-input">
+                <input type="text" id="city" placeholder="Enter your city name" />
+                <button id="fetch-data">Fetch Data</button>
+            </div>
+            <div id="city-data" class="card">
+                <!-- Fetched data will be displayed here -->
+            </div>
+        </section>
+
+        <!-- Real-Time Data Section -->
+        <section id="real-time-data">
+            <h2>🌟 Real-Time Data</h2>
+            <div id="data-display" class="card">
+                <p>Loading data...</p>
+            </div>
+        </section>
+
+        <!-- Weather Prediction Section -->
+        <section id="weather-prediction">
+            <h2>☀️ Weather Prediction</h2>
+            <div id="weather-display" class="card">
+                <p>Analyzing weather data...</p>
+            </div>
+        </section>
+
+        <!-- Flood Prediction Section -->
+        <section id="flood-prediction">
+            <h2>🌊 Flood Prediction</h2>
+            <div id="flood-display" class="card">
+                <p>Analyzing flood data...</p>
+            </div>
+        </section>
+
+        <!-- Earthquake Prediction Section -->
+        <section id="earthquake-prediction">
+            <h2>🌍 Earthquake Prediction</h2>
+            <div id="earthquake-display" class="card">
+                <p>Analyzing earthquake data...</p>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                The Disaster Management System combines satellite data from Google Earth Engine
+                with IoT sensors (temperature, humidity, seismic activity).
+                AI/ML models analyze the data to predict natural disasters such as floods,
+                earthquakes, or wildfires to keep you safe.
+            </p>
+        </section>
+
+        <!-- Contact Us Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>
+                Have questions or need support? Reach out to us:
+            </p>
+            <ul>
+                <li>Email: support@disastermanagement.com</li>
+                <li>Phone: +1-555-123-4567</li>
+                <li>Address: 123 Safety Lane, Preparedness City, Earth</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Disaster Management System | Designed with ❤️</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
